@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "businessName": "Rowdy",
+  "sourceUrls": ["https://rowdy-bavarskaja-ulitsa.clients.site/", "https://yandex.ru/maps/org/raudi/196568489326/"],
+  "openingClassification": "profile site",
+  "deliveryStage": "Stage 1",
+  "routes": [{ "newPath": "/", "deliveryStage": "Stage 1", "implementation": "implemented" }, { "newPath": "/prices", "deliveryStage": "Stage 2", "implementation": "deferred" }, { "newPath": "/gallery", "deliveryStage": "Stage 2", "implementation": "deferred" }, { "newPath": "/reviews", "deliveryStage": "Stage 2", "implementation": "deferred" }],
+  "preview": { "status": "running", "url": "http://127.0.0.1:4179/", "port": 4179 },
+  "publication": { "authorized": false }
+}
