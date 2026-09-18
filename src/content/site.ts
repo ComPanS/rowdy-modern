@@ -11,9 +11,11 @@ export const site = {
   routeUrl: 'https://yandex.ru/maps?ll=38.92857483680535%2C45.11952370708726&mode=routes&rtext=~45.11952370708726%2C38.92857483680535&z=17',
   telegramUrl: 'https://telegram.me/+79136828202',
   whatsappUrl: 'https://wa.me/+79136828202',
-  logo: '/media/logo.jpg',
-  heroImage: '/media/interior.jpg',
+  logo: `${import.meta.env.BASE_URL}media/logo.jpg`,
+  heroImage: `${import.meta.env.BASE_URL}media/interior.jpg`,
 }
+
+export const media = (name: string) => `${import.meta.env.BASE_URL}media/${name}`
 
 export const services: Service[] = [
   { title: 'Мужская стрижка', price: '1 500 ₽' },

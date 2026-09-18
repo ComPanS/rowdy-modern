@@ -1,4 +1,4 @@
-import { site, services, reviews } from '../content/site'
+import { site, services, reviews, media } from '../content/site'
 
 export function HomePage() {
   return (
@@ -16,7 +16,7 @@ export function HomePage() {
       <section className="intro section" id="about">
         <div className="section-kicker"><span>01</span><span>О нас</span></div>
         <div className="intro-grid"><h2>Место, где<br /><em>свой стиль</em><br />становится заметным.</h2><div className="intro-copy"><p>Крутые мастера, вкусный кофе, виски, кола, правильная музыка и внимание к деталям.</p><p>Можно с собакой. Есть парковка и доступная среда. Твой стиль начинается здесь.</p><div className="amenities"><span>◼ Можно с собакой</span><span>◼ Парковка</span><span>◼ Wi-Fi</span></div></div></div>
-        <div className="image-strip"><img src="/media/gallery-1.jpg" alt="Детали интерьера Rowdy" /><img src="/media/gallery-2.jpg" alt="Барбершоп Rowdy" /><img src="/media/gallery-3.jpg" alt="Атмосфера Rowdy" /></div>
+        <div className="image-strip"><img src={media('gallery-1.jpg')} alt="Детали интерьера Rowdy" /><img src={media('gallery-2.jpg')} alt="Барбершоп Rowdy" /><img src={media('gallery-3.jpg')} alt="Атмосфера Rowdy" /></div>
       </section>
 
       <section className="promo section" id="promos"><div className="promo-label">01 / АКЦИЯ</div><div><h2>Первый визит —<br /><em>особенный.</em></h2><p>Мужская стрижка с учётом формы головы и пожеланий, воск для одной зоны, охлаждающие патчи и чёрная очищающая маска для лица.</p></div><div className="promo-date">Действует<br />до 30.09.2026</div></section>
